@@ -109,6 +109,8 @@
         <a href="tel:+13097941648" class="btn btn--red">Call to Order</a>
       </div>
 
+      <button id="langToggle" class="lang-toggle" type="button" aria-label="Language / Idioma" title="English / Español"><span data-l="en">EN</span><span data-l="es">ES</span></button>
+
       <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="overlay">
         <span></span><span></span><span></span>
       </button>
@@ -168,16 +170,16 @@
       <div class="story__grid">
         <div class="story__text">
           <p class="kicker" data-reveal>Who We Are</p>
-          <h2 class="story__head" data-reveal>
+          <h2 class="story__head" data-reveal data-i18n="0">
             A family kitchen,<br /><em>cooking the real thing.</em>
           </h2>
-          <p data-reveal>
+          <p data-reveal data-i18n="1">
             La Rancherita is family-owned and operated — a neighborhood taqueria where the
             recipes come straight from home. We cook beans and rice, enchiladas, stuffed
             chiles and shrimp <em>made to order</em>, from the breakfast plate at 8 in the
             morning to dinner at night.
           </p>
-          <p data-reveal>
+          <p data-reveal data-i18n="2">
             Locals know us for authentic street tacos, <em>lengua</em> and gorditas — not
             mass-market Tex-Mex. The hand-painted <em>Bienvenidos</em> storefront, the
             complimentary chips and salsa, and a kitchen that doesn't cut corners set a warm,
@@ -217,7 +219,7 @@
     <section class="sig" id="signatures">
       <div class="sig__intro">
         <p class="kicker" data-reveal>The Favoritos</p>
-        <h2 class="section-head" data-reveal>Dishes the<br />regulars order.</h2>
+        <h2 class="section-head" data-reveal data-i18n="3">Dishes the<br />regulars order.</h2>
       </div>
 
       <!-- Row 1 -->
@@ -256,7 +258,7 @@
         <div class="sig__body">
           <span class="sig__index">03</span>
           <h3 class="sig__title" data-letters>Chile Relleno</h3>
-          <p class="sig__desc">A roasted, stuffed poblano done generously — one guest noted their plate came
+          <p class="sig__desc" data-i18n="4">A roasted, stuffed poblano done generously — one guest noted their plate came
             with <em>two</em> peppers. Hearty, homemade, and a longtime favorite off the specialties board.</p>
           <a href="#menu" class="link-underline">See specialties &rarr;</a>
         </div>
@@ -552,7 +554,7 @@
     <div class="footer__grid">
       <div class="footer__brand">
         <p class="footer__word">&ldquo;La Rancherita&rdquo;</p>
-        <p class="footer__tag">Comida Mexicana.<br />Family-owned authentic Mexican food in Rock Island, Illinois.</p>
+        <p class="footer__tag" data-i18n="5">Comida Mexicana.<br />Family-owned authentic Mexican food in Rock Island, Illinois.</p>
       </div>
 
       <div class="footer__col">
@@ -572,7 +574,7 @@
 
       <div class="footer__col">
         <h4>Hours</h4>
-        <p>Open daily<br />8:00 AM &ndash; 10:00 PM</p>
+        <p data-i18n="6">Open daily<br />8:00 AM &ndash; 10:00 PM</p>
         <a href="https://www.facebook.com/pages/La-Rancherita/159930410709472" target="_blank" rel="noopener">Facebook</a>
       </div>
     </div>
@@ -599,5 +601,96 @@
 
   <!-- Visibility failsafe -->
   <script>setTimeout(function(){document.querySelectorAll(".reveal,[data-reveal]").forEach(function(e){e.classList.add("is-visible")});document.querySelectorAll("[data-hero-line],.hero__line,.hero__title .line>span").forEach(function(e){e.style.opacity="1";e.style.transform="none";e.style.visibility="visible"})},2200);</script>
+
+  <!-- ===== EN/ES language toggle ===== -->
+  <style id="i18n-style">
+    .lang-toggle{display:inline-flex;align-items:center;border:1.4px solid currentColor;border-radius:999px;overflow:hidden;background:transparent;cursor:pointer;padding:0;margin:0 .55rem 0 0;font-family:inherit;vertical-align:middle;opacity:.82;-webkit-tap-highlight-color:transparent;flex:0 0 auto}
+    .lang-toggle:hover{opacity:1}
+    .lang-toggle span{display:block;padding:.36em .56em;font-size:.68rem;font-weight:800;letter-spacing:.04em;color:currentColor;line-height:1;transition:background .15s,color .15s}
+    .lang-toggle span.on{background:#C8362B;color:#fff}
+    @media(max-width:600px){ .lang-toggle{margin-right:.5rem} .lang-toggle span{padding:.34em .48em;font-size:.66rem} }
+    html[lang="es"] .hours tr.is-now td::after{ content:" \00b7  Abierto ahora" !important; }
+  </style>
+  <script id="i18n-script">
+
+  (function(){
+    var TEXT = {"Story": "Historia", "Signatures": "Especialidades", "Menu": "Menú", "Gallery": "Galería", "Visit": "Visítanos", "Call to Order": "Llama para ordenar", "Call (309) 794-1648": "Llama al (309) 794-1648", "Get Directions": "Cómo llegar", "4118 14th Ave · Rock Island, IL · Cash Only": "4118 14th Ave · Rock Island, IL · Solo efectivo", "Homemade, traditional Mexican cooking — street tacos, lengua, chiles rellenos and margaritas, made the way the family always has.": "Cocina mexicana casera y tradicional — tacos de la calle, lengua, chiles rellenos y margaritas, hechos como la familia siempre lo ha hecho.", "See the Menu": "Ver el menú", "Cash Only · ATM On-Site": "Solo efectivo · Cajero en el local", "Scroll": "Desliza", "Who We Are": "Quiénes somos", "Meet the signatures &rarr;": "Conoce las especialidades →", "Average rating": "Calificación promedio", "Guest reviews": "Reseñas de clientes", "Open daily, AM &amp; PM": "Abierto a diario, mañana y noche", "Budget-friendly · cash only": "Precios accesibles · solo efectivo", "The Favoritos": "Los favoritos", "Grilled steak on corn tortillas, dressed simply with cilantro, onion and a\n            squeeze of lime — the carne asada and street tacos that reviewers call \"amazing and mind-blowing.\"": "Bistec asado en tortillas de maíz, con solo cilantro, cebolla y un\n            toque de limón — la carne asada y los tacos de la calle que los clientes llaman \"increíbles y espectaculares\".", "On the taco menu &rarr;": "En el menú de tacos →", "Tender, slow-seasoned beef tongue — in a street taco or folded into the\n            lengua-and-chorizo burrito. One guest called the tongue tacos and burrito \"absolutely delicious.\"": "Lengua de res tierna y bien sazonada — en un taco de la calle o dentro del\n            burrito de lengua con chorizo. Un cliente llamó a los tacos de lengua y al burrito \"absolutamente deliciosos\".", "Tacos &amp; burritos &rarr;": "Tacos y burritos →", "See specialties &rarr;": "Ver especialidades →", "A deep-fried burrito, golden and crispy outside, hot and savory within —\n            \"awesome food,\" in the words of guests who \"both had the chimichangas and loved them.\"": "Un burrito frito, dorado y crujiente por fuera, caliente y sabroso por dentro —\n            \"comida increíble\", en palabras de clientes que \"ambos pidieron las chimichangas y las adoraron\".", "On the menu &rarr;": "En el menú →", "The Menu · El Menú": "El Menú", "Breakfast, lunch and dinner — homemade and made to order. Item names are current;\n          ask your server for today's prices and specials.": "Desayuno, comida y cena — casero y hecho al momento. Los nombres de los platillos están al día;\n          pregunta a tu mesero por los precios y especiales de hoy.", "Tacos &amp; Burritos": "Tacos y burritos", "Plates &amp; Specialties": "Platos y especialidades", "Starters &amp; Drinks": "Entradas y bebidas", "Tacos": "Tacos", "Grilled steak, cilantro, onion, lime on corn tortillas": "Bistec asado, cilantro, cebolla y limón en tortillas de maíz", "Marinated pork, street style": "Cerdo marinado, estilo de la calle", "Tender seasoned beef tongue": "Lengua de res tierna y sazonada", "Desayuno · Breakfast": "Desayuno", "Mexican chorizo and eggs, served with beans": "Chorizo mexicano con huevo, servido con frijoles", "Served from open at 8 AM": "Servido desde la apertura a las 8 AM", "Burritos": "Burritos", "Succulent steak in a warm tortilla": "Bistec jugoso en una tortilla calientita", "Filled with fresh vegetables": "Relleno de verduras frescas", "Beef tongue and chorizo — a review favorite": "Lengua de res y chorizo — un favorito de las reseñas", "Enchiladas": "Enchiladas", "Specialties · Favoritos": "Especialidades · Favoritos", "Stuffed poblano pepper, generous portion": "Chile poblano relleno, porción generosa", "Deep-fried burrito, golden and crispy": "Burrito frito, dorado y crujiente", "Fajitas": "Fajitas", "Choice of chicken, steak, veggie, or shrimp &amp; chorizo": "A elegir: pollo, bistec, vegetariana, o camarón con chorizo", "Choice of two meats": "A elegir dos carnes", "Mariscos · Seafood": "Mariscos", "Coconut shrimp": "Camarón al coco", "Starters &amp; Sides": "Entradas y guarniciones", "Complimentary with your table — the salsa runs spicy": "De cortesía con tu mesa — la salsa es picosita", "Made fresh tableside": "Preparado al momento en tu mesa", "Mexican street corn": "Elote mexicano de la calle", "Postres · Desserts": "Postres", "Bebidas · Drinks": "Bebidas", "House favorite, frozen and fresh": "El favorito de la casa, frozen y fresco", "Kitchen open daily, 8 AM &ndash; 10 PM. Cash only.": "Cocina abierta a diario, 8 AM – 10 PM. Solo efectivo.", "vegetarian option": "opción vegetariana", "guest favorite": "favorito de clientes", "complimentary": "de cortesía", "From the Kitchen": "Desde la cocina", "A taste in pictures.": "Un antojo en imágenes.", "Good to Know": "Bueno saber", "Before you come by.": "Antes de venir.", "Cash Only": "Solo efectivo", "We're cash only, with an ATM on-site for your convenience.": "Aceptamos solo efectivo, con cajero automático en el local para tu comodidad.", "Dine-In &amp; Carry-Out": "Para comer aquí o para llevar", "Eat in the dining room or take it to go — your call.": "Come en el comedor o llévatelo — tú decides.", "Open Daily 8&ndash;10": "Abierto a diario 8–10", "Breakfast, lunch and dinner, every day from 8 AM to 10 PM.": "Desayuno, comida y cena, todos los días de 8 AM a 10 PM.", "Authentic Street Tacos": "Auténticos tacos de la calle", "Carne asada, al pastor, lengua and more — the real thing.": "Carne asada, al pastor, lengua y más — lo auténtico.", "Margaritas &amp; Beer": "Margaritas y cerveza", "Strawberry margaritas, cocktails, beer and aguas frescas.": "Margaritas de fresa, cocteles, cerveza y aguas frescas.", "In Rock Island": "En Rock Island", "4118 14th Ave — a family-run neighborhood favorite.": "4118 14th Ave — un favorito de barrio de manejo familiar.", "Word of Mouth": "De boca en boca", "What guests say.": "Lo que dicen los clientes.", "Visit Us": "Visítanos", "Come on by.": "Ven a visitarnos.", "Address": "Dirección", "Hours": "Horario", "Cash only · ATM on-site": "Solo efectivo · cajero en el local", "Monday": "Lunes", "Tuesday": "Martes", "Wednesday": "Miércoles", "Thursday": "Jueves", "Friday": "Viernes", "Saturday": "Sábado", "Sunday": "Domingo", "Explore": "Explorar", "Our Story": "Nuestra historia", "All Rights Reserved.": "Todos los derechos reservados.", "Map": "Mapa", "Call": "Llamar"};
+    var ATTR = {"Open menu": "Abrir menú", "Close menu": "Cerrar menú", "Menu": "Menú", "Primary": "Principal", "Mobile": "Móvil", "Scroll down": "Desliza hacia abajo", "Menu sections": "Secciones del menú", "Good to know": "Bueno saber", "Previous": "Anterior", "Next": "Siguiente", "Quick actions": "Acciones rápidas"};
+    var HTML = {"0": "Una cocina familiar,<br /><em>preparando lo auténtico.</em>", "1": "La Rancherita es de propiedad y operación familiar — una taquería de barrio donde las\n            recetas vienen directo de casa. Preparamos frijoles y arroz, enchiladas, chiles\n            rellenos y camarón <em>al momento</em>, desde el plato del desayuno a las 8 de la\n            mañana hasta la cena por la noche.", "2": "Los vecinos nos conocen por los auténticos tacos de la calle, la <em>lengua</em> y las gorditas — no\n            el Tex-Mex de cadena. La fachada con el <em>Bienvenidos</em> pintado a mano, las\n            botanas de cortesía de totopos y salsa, y una cocina que no toma atajos crean un ambiente cálido y\n            acogedor. Aceptamos solo efectivo, con cajero automático en el local.", "3": "Los platillos que<br />piden los de siempre.", "4": "Un chile poblano asado y relleno, servido con generosidad — un cliente notó que su plato llegó\n            con <em>dos</em> chiles. Abundante, casero y desde hace mucho un favorito de la carta de especialidades.", "5": "Comida Mexicana.<br />Comida mexicana auténtica de propiedad familiar en Rock Island, Illinois.", "6": "Abierto a diario<br />8:00 AM &ndash; 10:00 PM"};
+    var KEY = "rancherita_lang";
+    function dec(s){ try{ var e=document.createElement('textarea'); e.innerHTML=s; return e.value; }catch(_){ return String(s); } }
+    function norm(s){ return dec(String(s)).replace(/\s+/g,' ').trim(); }
+    var T={}, A={};
+    for(var k in TEXT){ if(TEXT.hasOwnProperty(k)){ var kk=norm(k); if(kk) T[kk]=TEXT[k]; } }
+    for(var k2 in ATTR){ if(ATTR.hasOwnProperty(k2)){ var na=norm(k2); if(na) A[na]=ATTR[k2]; } }
+    var lang='en';
+    try{
+      var up=new URLSearchParams(location.search).get('lang');
+      if(up==='es'||up==='en'){ lang=up; localStorage.setItem(KEY,up); }
+      else if(localStorage.getItem(KEY)==='es'){ lang='es'; }
+    }catch(_){ try{ if(localStorage.getItem(KEY)==='es') lang='es'; }catch(e){} }
+    var SKIP={SCRIPT:1,STYLE:1,NOSCRIPT:1,TEXTAREA:1,CODE:1};
+    var tnodes=[], anodes=[], hnodes=[];
+    var seen=(window.WeakSet)?new WeakSet():null;
+    var seenH=(window.WeakSet)?new WeakSet():null;
+    function nkey(v){ return v.replace(/\s+/g,' ').trim(); }
+    function scan(root){
+      if(!root||root.nodeType!==1) return;
+      var w=document.createTreeWalker(root,NodeFilter.SHOW_TEXT,null,false), n;
+      while(n=w.nextNode()){
+        var v=n.nodeValue; if(!v) continue; var key=nkey(v); if(!key) continue;
+        var p=n.parentNode; if(!p||SKIP[p.nodeName]) continue;
+        if(!T.hasOwnProperty(key)) continue;
+        if(seen){ if(seen.has(n)) continue; seen.add(n); }
+        tnodes.push({node:n,en:v,key:key});
+      }
+      var names=['placeholder','aria-label','title','alt'];
+      var els=root.querySelectorAll('[placeholder],[aria-label],[title],[alt]');
+      for(var i=0;i<els.length;i++){ var el=els[i];
+        for(var a=0;a<names.length;a++){ var nm=names[a]; if(!el.hasAttribute(nm)) continue;
+          var val=el.getAttribute(nm); var vk=val?nkey(val):''; if(!vk||!A.hasOwnProperty(vk)) continue;
+          anodes.push({el:el,attr:nm,en:val,key:vk});
+        }
+      }
+      var hs=root.querySelectorAll('[data-i18n]');
+      for(var h=0;h<hs.length;h++){ var he=hs[h];
+        if(seenH){ if(seenH.has(he)) continue; seenH.add(he); }
+        var id=he.getAttribute('data-i18n');
+        if(HTML.hasOwnProperty(id)) hnodes.push({el:he,en:he.innerHTML,k:id});
+      }
+    }
+    function repl(orig,es){ var m=orig.match(/^(\s*)([\s\S]*?)(\s*)$/); return m[1]+es+m[3]; }
+    function apply(){
+      for(var i=0;i<tnodes.length;i++){ var o=tnodes[i];
+        o.node.nodeValue=(lang==='es'&&T[o.key]!=null)?repl(o.en,T[o.key]):o.en; }
+      for(var j=0;j<anodes.length;j++){ var e=anodes[j];
+        e.el.setAttribute(e.attr,(lang==='es'&&A[e.key]!=null)?A[e.key]:e.en); }
+      for(var g=0;g<hnodes.length;g++){ var hn=hnodes[g];
+        var want=(lang==='es'&&HTML[hn.k]!=null)?HTML[hn.k]:hn.en;
+        if(hn.el.innerHTML!==want) hn.el.innerHTML=want; }
+      try{ document.documentElement.setAttribute('lang',lang); }catch(_){}
+      var b=document.getElementById('langToggle');
+      if(b){ var ss=b.querySelectorAll('[data-l]'); for(var q=0;q<ss.length;q++){ ss[q].classList.toggle('on',ss[q].getAttribute('data-l')===lang); } }
+    }
+    function setLang(l){ lang=(l==='es')?'es':'en'; try{localStorage.setItem(KEY,lang);}catch(_){}; apply(); }
+    function init(){
+      scan(document.body); apply();
+      var btn=document.getElementById('langToggle');
+      if(btn){ btn.addEventListener('click',function(ev){
+        var el=ev.target; while(el&&el!==btn&&!(el.getAttribute&&el.getAttribute('data-l'))) el=el.parentNode;
+        var l=(el&&el.getAttribute)?el.getAttribute('data-l'):null;
+        setLang(l?l:(lang==='es'?'en':'es'));
+      }); }
+      if(window.MutationObserver){
+        var pending=false;
+        var mo=new MutationObserver(function(){ if(pending) return; pending=true;
+          setTimeout(function(){ pending=false; var b0=tnodes.length+anodes.length+hnodes.length; scan(document.body); if(tnodes.length+anodes.length+hnodes.length!==b0) apply(); },160); });
+        mo.observe(document.body,{childList:true,subtree:true});
+      } else { setTimeout(function(){ scan(document.body); apply(); },1200); setTimeout(function(){ scan(document.body); apply(); },3000); }
+    }
+    if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',init); else init();
+  })();
+
+  </script>
 </body>
 </html>

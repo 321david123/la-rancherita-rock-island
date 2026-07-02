@@ -144,37 +144,56 @@
     });
   });
 
-  /* ---------- Highlight current day in hours ---------- */
+  /* ---------- Highlight today's row ONLY when actually open now ---------- */
   (function () {
-    var table = document.getElementById("hours");
-    if (!table) return;
-    var rows = table.querySelectorAll("tbody tr");
-    var dayIdx = new Date().getDay(); // 0=Sun .. 6=Sat
-    var map = { 1: 0, 2: 1, 3: 2, 4: 3, 5: 4, 6: 5, 0: 6 };
-    var rowIdx = map[dayIdx];
-    var hr = new Date().getHours();
-    var open = hr >= 8 && hr < 22;
-    if (rows[rowIdx] && open) rows[rowIdx].classList.add("is-now");
+    var rows = document.querySelectorAll("#hours tbody tr");
+    if (!rows.length) return;
+    // open/close in minutes from midnight, matching THIS site's hours table.
+    // close > 1440 = runs past midnight into the next day. null = closed that day.
+    var HRS = {
+      0: { o: 480, c: 1320 },  // Sun 8:00 AM – 10:00 PM
+      1: { o: 480, c: 1320 },  // Mon 8:00 AM – 10:00 PM
+      2: { o: 480, c: 1320 },  // Tue 8:00 AM – 10:00 PM
+      3: { o: 480, c: 1320 },  // Wed 8:00 AM – 10:00 PM
+      4: { o: 480, c: 1320 },  // Thu 8:00 AM – 10:00 PM
+      5: { o: 480, c: 1320 },  // Fri 8:00 AM – 10:00 PM
+      6: { o: 480, c: 1320 }   // Sat 8:00 AM – 10:00 PM
+    };
+    var d = new Date();
+    var day = d.getDay();                       // 0 Sun .. 6 Sat
+    var now = d.getHours() * 60 + d.getMinutes();
+    var open = false;
+    var t = HRS[day];
+    if (t && now >= t.o && now < Math.min(t.c, 1440)) open = true;   // today's shift, up to midnight
+    var yt = HRS[(day + 6) % 7];                                     // yesterday
+    if (yt && yt.c > 1440 && now < (yt.c - 1440)) open = true;       // still open from last night's late shift
+    if (!open) return;                                              // closed → no highlight, no "Open now"
+    var rowIndex = day === 0 ? 6 : day - 1;    // table order: Mon..Sun
+    if (rows[rowIndex]) rows[rowIndex].classList.add("is-now");
   })();
 
   /* ---------- Swiper: gallery ---------- */
   if (window.Swiper) {
-    new Swiper(".gallery__swiper", {
-      slidesPerView: "auto",
-      spaceBetween: 18,
-      grabCursor: true,
-      navigation: {
-        nextEl: ".gallery__btn--next",
-        prevEl: ".gallery__btn--prev"
-      }
-    });
+    if (document.querySelector(".gallery__swiper")) {
+      new Swiper(".gallery__swiper", {
+        slidesPerView: "auto",
+        spaceBetween: 18,
+        grabCursor: true,
+        navigation: {
+          nextEl: ".gallery__btn--next",
+          prevEl: ".gallery__btn--prev"
+        }
+      });
+    }
 
-    new Swiper(".reviews__swiper", {
-      slidesPerView: 1,
-      loop: true,
-      autoplay: reduceMotion ? false : { delay: 5200, disableOnInteraction: false },
-      speed: 700,
-      pagination: { el: ".reviews__dots", clickable: true }
-    });
+    if (document.querySelector(".reviews__swiper")) {
+      new Swiper(".reviews__swiper", {
+        slidesPerView: 1,
+        loop: true,
+        autoplay: reduceMotion ? false : { delay: 5200, disableOnInteraction: false },
+        speed: 700,
+        pagination: { el: ".reviews__dots", clickable: true }
+      });
+    }
   }
 })();

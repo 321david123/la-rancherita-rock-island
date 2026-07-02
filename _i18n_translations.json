@@ -1,0 +1,144 @@
+{
+  "pairs": [
+    { "en": "Story", "es": "Historia" },
+    { "en": "Signatures", "es": "Especialidades" },
+    { "en": "Menu", "es": "Menú" },
+    { "en": "Gallery", "es": "Galería" },
+    { "en": "Visit", "es": "Visítanos" },
+    { "en": "Call to Order", "es": "Llama para ordenar" },
+
+    { "en": "Call (309) 794-1648", "es": "Llama al (309) 794-1648" },
+    { "en": "Get Directions", "es": "Cómo llegar" },
+    { "en": "4118 14th Ave · Rock Island, IL · Cash Only", "es": "4118 14th Ave · Rock Island, IL · Solo efectivo" },
+
+    { "en": "Homemade, traditional Mexican cooking — street tacos, lengua, chiles rellenos and margaritas, made the way the family always has.", "es": "Cocina mexicana casera y tradicional — tacos de la calle, lengua, chiles rellenos y margaritas, hechos como la familia siempre lo ha hecho." },
+    { "en": "See the Menu", "es": "Ver el menú" },
+    { "en": "Cash Only · ATM On-Site", "es": "Solo efectivo · Cajero en el local" },
+    { "en": "Scroll", "es": "Desliza" },
+
+    { "en": "Who We Are", "es": "Quiénes somos" },
+    { "en": "A family kitchen,<br /><em>cooking the real thing.</em>", "es": "Una cocina familiar,<br /><em>preparando lo auténtico.</em>" },
+    { "en": "La Rancherita is family-owned and operated — a neighborhood taqueria where the\n            recipes come straight from home. We cook beans and rice, enchiladas, stuffed\n            chiles and shrimp <em>made to order</em>, from the breakfast plate at 8 in the\n            morning to dinner at night.", "es": "La Rancherita es de propiedad y operación familiar — una taquería de barrio donde las\n            recetas vienen directo de casa. Preparamos frijoles y arroz, enchiladas, chiles\n            rellenos y camarón <em>al momento</em>, desde el plato del desayuno a las 8 de la\n            mañana hasta la cena por la noche." },
+    { "en": "Locals know us for authentic street tacos, <em>lengua</em> and gorditas — not\n            mass-market Tex-Mex. The hand-painted <em>Bienvenidos</em> storefront, the\n            complimentary chips and salsa, and a kitchen that doesn't cut corners set a warm,\n            welcoming tone. We're cash only, with an ATM on-site.", "es": "Los vecinos nos conocen por los auténticos tacos de la calle, la <em>lengua</em> y las gorditas — no\n            el Tex-Mex de cadena. La fachada con el <em>Bienvenidos</em> pintado a mano, las\n            botanas de cortesía de totopos y salsa, y una cocina que no toma atajos crean un ambiente cálido y\n            acogedor. Aceptamos solo efectivo, con cajero automático en el local." },
+    { "en": "Meet the signatures &rarr;", "es": "Conoce las especialidades &rarr;" },
+
+    { "en": "Average rating", "es": "Calificación promedio" },
+    { "en": "Guest reviews", "es": "Reseñas de clientes" },
+    { "en": "Open daily, AM &amp; PM", "es": "Abierto a diario, mañana y noche" },
+    { "en": "Budget-friendly · cash only", "es": "Precios accesibles · solo efectivo" },
+
+    { "en": "The Favoritos", "es": "Los favoritos" },
+    { "en": "Dishes the<br />regulars order.", "es": "Los platillos que<br />piden los de siempre." },
+
+    { "en": "Grilled steak on corn tortillas, dressed simply with cilantro, onion and a\n            squeeze of lime — the carne asada and street tacos that reviewers call \"amazing and mind-blowing.\"", "es": "Bistec asado en tortillas de maíz, con solo cilantro, cebolla y un\n            toque de limón — la carne asada y los tacos de la calle que los clientes llaman \"increíbles y espectaculares\"." },
+    { "en": "On the taco menu &rarr;", "es": "En el menú de tacos &rarr;" },
+    { "en": "Tender, slow-seasoned beef tongue — in a street taco or folded into the\n            lengua-and-chorizo burrito. One guest called the tongue tacos and burrito \"absolutely delicious.\"", "es": "Lengua de res tierna y bien sazonada — en un taco de la calle o dentro del\n            burrito de lengua con chorizo. Un cliente llamó a los tacos de lengua y al burrito \"absolutamente deliciosos\"." },
+    { "en": "Tacos &amp; burritos &rarr;", "es": "Tacos y burritos &rarr;" },
+    { "en": "A roasted, stuffed poblano done generously — one guest noted their plate came\n            with <em>two</em> peppers. Hearty, homemade, and a longtime favorite off the specialties board.", "es": "Un chile poblano asado y relleno, servido con generosidad — un cliente notó que su plato llegó\n            con <em>dos</em> chiles. Abundante, casero y desde hace mucho un favorito de la carta de especialidades." },
+    { "en": "See specialties &rarr;", "es": "Ver especialidades &rarr;" },
+    { "en": "A deep-fried burrito, golden and crispy outside, hot and savory within —\n            \"awesome food,\" in the words of guests who \"both had the chimichangas and loved them.\"", "es": "Un burrito frito, dorado y crujiente por fuera, caliente y sabroso por dentro —\n            \"comida increíble\", en palabras de clientes que \"ambos pidieron las chimichangas y las adoraron\"." },
+    { "en": "On the menu &rarr;", "es": "En el menú &rarr;" },
+
+    { "en": "The Menu · El Menú", "es": "El Menú" },
+    { "en": "Breakfast, lunch and dinner — homemade and made to order. Item names are current;\n          ask your server for today's prices and specials.", "es": "Desayuno, comida y cena — casero y hecho al momento. Los nombres de los platillos están al día;\n          pregunta a tu mesero por los precios y especiales de hoy." },
+
+    { "en": "Tacos &amp; Burritos", "es": "Tacos y burritos" },
+    { "en": "Plates &amp; Specialties", "es": "Platos y especialidades" },
+    { "en": "Starters &amp; Drinks", "es": "Entradas y bebidas" },
+
+    { "en": "Tacos", "es": "Tacos" },
+    { "en": "Grilled steak, cilantro, onion, lime on corn tortillas", "es": "Bistec asado, cilantro, cebolla y limón en tortillas de maíz" },
+    { "en": "Marinated pork, street style", "es": "Cerdo marinado, estilo de la calle" },
+    { "en": "Tender seasoned beef tongue", "es": "Lengua de res tierna y sazonada" },
+    { "en": "Desayuno · Breakfast", "es": "Desayuno" },
+    { "en": "Mexican chorizo and eggs, served with beans", "es": "Chorizo mexicano con huevo, servido con frijoles" },
+    { "en": "Served from open at 8 AM", "es": "Servido desde la apertura a las 8 AM" },
+
+    { "en": "Burritos", "es": "Burritos" },
+    { "en": "Succulent steak in a warm tortilla", "es": "Bistec jugoso en una tortilla calientita" },
+    { "en": "Filled with fresh vegetables", "es": "Relleno de verduras frescas" },
+    { "en": "Beef tongue and chorizo — a review favorite", "es": "Lengua de res y chorizo — un favorito de las reseñas" },
+    { "en": "Enchiladas", "es": "Enchiladas" },
+
+    { "en": "Specialties · Favoritos", "es": "Especialidades · Favoritos" },
+    { "en": "Stuffed poblano pepper, generous portion", "es": "Chile poblano relleno, porción generosa" },
+    { "en": "Deep-fried burrito, golden and crispy", "es": "Burrito frito, dorado y crujiente" },
+
+    { "en": "Fajitas", "es": "Fajitas" },
+    { "en": "Choice of chicken, steak, veggie, or shrimp &amp; chorizo", "es": "A elegir: pollo, bistec, vegetariana, o camarón con chorizo" },
+    { "en": "Choice of two meats", "es": "A elegir dos carnes" },
+    { "en": "Mariscos · Seafood", "es": "Mariscos" },
+    { "en": "Coconut shrimp", "es": "Camarón al coco" },
+
+    { "en": "Starters &amp; Sides", "es": "Entradas y guarniciones" },
+    { "en": "Complimentary with your table — the salsa runs spicy", "es": "De cortesía con tu mesa — la salsa es picosita" },
+    { "en": "Made fresh tableside", "es": "Preparado al momento en tu mesa" },
+    { "en": "Mexican street corn", "es": "Elote mexicano de la calle" },
+    { "en": "Postres · Desserts", "es": "Postres" },
+
+    { "en": "Bebidas · Drinks", "es": "Bebidas" },
+    { "en": "House favorite, frozen and fresh", "es": "El favorito de la casa, frozen y fresco" },
+    { "en": "Kitchen open daily, 8 AM &ndash; 10 PM. Cash only.", "es": "Cocina abierta a diario, 8 AM &ndash; 10 PM. Solo efectivo." },
+
+    { "en": "vegetarian option", "es": "opción vegetariana" },
+    { "en": "guest favorite", "es": "favorito de clientes" },
+    { "en": "complimentary", "es": "de cortesía" },
+
+    { "en": "From the Kitchen", "es": "Desde la cocina" },
+    { "en": "A taste in pictures.", "es": "Un antojo en imágenes." },
+
+    { "en": "Good to Know", "es": "Bueno saber" },
+    { "en": "Before you come by.", "es": "Antes de venir." },
+    { "en": "Cash Only", "es": "Solo efectivo" },
+    { "en": "We're cash only, with an ATM on-site for your convenience.", "es": "Aceptamos solo efectivo, con cajero automático en el local para tu comodidad." },
+    { "en": "Dine-In &amp; Carry-Out", "es": "Para comer aquí o para llevar" },
+    { "en": "Eat in the dining room or take it to go — your call.", "es": "Come en el comedor o llévatelo — tú decides." },
+    { "en": "Open Daily 8&ndash;10", "es": "Abierto a diario 8&ndash;10" },
+    { "en": "Breakfast, lunch and dinner, every day from 8 AM to 10 PM.", "es": "Desayuno, comida y cena, todos los días de 8 AM a 10 PM." },
+    { "en": "Authentic Street Tacos", "es": "Auténticos tacos de la calle" },
+    { "en": "Carne asada, al pastor, lengua and more — the real thing.", "es": "Carne asada, al pastor, lengua y más — lo auténtico." },
+    { "en": "Margaritas &amp; Beer", "es": "Margaritas y cerveza" },
+    { "en": "Strawberry margaritas, cocktails, beer and aguas frescas.", "es": "Margaritas de fresa, cocteles, cerveza y aguas frescas." },
+    { "en": "In Rock Island", "es": "En Rock Island" },
+    { "en": "4118 14th Ave — a family-run neighborhood favorite.", "es": "4118 14th Ave — un favorito de barrio de manejo familiar." },
+
+    { "en": "Word of Mouth", "es": "De boca en boca" },
+    { "en": "What guests say.", "es": "Lo que dicen los clientes." },
+
+    { "en": "Visit Us", "es": "Visítanos" },
+    { "en": "Come on by.", "es": "Ven a visitarnos." },
+    { "en": "Address", "es": "Dirección" },
+    { "en": "Hours", "es": "Horario" },
+    { "en": "Cash only · ATM on-site", "es": "Solo efectivo · cajero en el local" },
+
+    { "en": "Monday", "es": "Lunes" },
+    { "en": "Tuesday", "es": "Martes" },
+    { "en": "Wednesday", "es": "Miércoles" },
+    { "en": "Thursday", "es": "Jueves" },
+    { "en": "Friday", "es": "Viernes" },
+    { "en": "Saturday", "es": "Sábado" },
+    { "en": "Sunday", "es": "Domingo" },
+
+    { "en": "Comida Mexicana.<br />Family-owned authentic Mexican food in Rock Island, Illinois.", "es": "Comida Mexicana.<br />Comida mexicana auténtica de propiedad familiar en Rock Island, Illinois." },
+    { "en": "Explore", "es": "Explorar" },
+    { "en": "Our Story", "es": "Nuestra historia" },
+    { "en": "Open daily<br />8:00 AM &ndash; 10:00 PM", "es": "Abierto a diario<br />8:00 AM &ndash; 10:00 PM" },
+    { "en": "All Rights Reserved.", "es": "Todos los derechos reservados." },
+
+    { "en": "Map", "es": "Mapa" },
+    { "en": "Call", "es": "Llamar" }
+  ],
+  "attrs": [
+    { "attr": "aria-label", "en": "Open menu", "es": "Abrir menú" },
+    { "attr": "aria-label", "en": "Close menu", "es": "Cerrar menú" },
+    { "attr": "aria-label", "en": "Menu", "es": "Menú" },
+    { "attr": "aria-label", "en": "Primary", "es": "Principal" },
+    { "attr": "aria-label", "en": "Mobile", "es": "Móvil" },
+    { "attr": "aria-label", "en": "Scroll down", "es": "Desliza hacia abajo" },
+    { "attr": "aria-label", "en": "Menu sections", "es": "Secciones del menú" },
+    { "attr": "aria-label", "en": "Good to know", "es": "Bueno saber" },
+    { "attr": "aria-label", "en": "Previous", "es": "Anterior" },
+    { "attr": "aria-label", "en": "Next", "es": "Siguiente" },
+    { "attr": "aria-label", "en": "Quick actions", "es": "Acciones rápidas" }
+  ]
+}

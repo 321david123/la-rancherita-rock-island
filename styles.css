@@ -186,6 +186,22 @@ a:focus-visible, button:focus-visible {
 
 .nav__cta .btn { padding: .65rem 1.4rem; }
 
+/* Language toggle — follows nav state so it reads in both transparent + solid */
+.nav .lang-toggle {
+  color: var(--paper);
+  border-color: rgba(246, 239, 226, .55);
+  text-shadow: 0 1px 8px rgba(0, 0, 0, .4);
+  margin: 0;
+  transition: color .3s, border-color .5s, text-shadow .5s, opacity .3s;
+}
+.nav.is-solid .lang-toggle {
+  color: var(--ink-soft);
+  border-color: var(--line);
+  text-shadow: none;
+}
+.nav .lang-toggle span { text-shadow: inherit; }
+.nav .lang-toggle span.on { color: #fff; text-shadow: none; }
+
 .nav__toggle {
   display: none; flex-direction: column; gap: 5px; background: none; border: none;
   cursor: pointer; padding: 8px; z-index: 1100;
@@ -624,6 +640,9 @@ a:focus-visible, button:focus-visible {
 @media (max-width: 1024px) {
   .nav__links, .nav__cta { display: none; }
   .nav__toggle { display: flex; }
+  /* Toggle stays visible next to the hamburger; give them breathing room */
+  .nav__inner { gap: .6rem; }
+  .nav .lang-toggle { margin-right: .1rem; }
   .story__grid { grid-template-columns: 1fr; }
   .story__media { max-height: 520px; }
   .visit__grid { grid-template-columns: 1fr; }
